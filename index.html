@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <div class="appPlacement">
+      <nav class="topbar">
+        <div id="dateContainer"></div>
+      </nav>
+      <section class="title">
+        <div>To Do List</div>
+      </section>
+
+      <section>
+        <form id="formTodo" class="formContainer">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Write down your tasks"
+            maxlength="64"
+          />
+          <input type="submit" value="Add Task" />
+        </form>
+        <div id="listID" class="list"></div>
+      </section>
+    </div>
+  </body>
+  <script src="index2.js"></script>
+</html>

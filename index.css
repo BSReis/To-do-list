@@ -1,0 +1,141 @@
+.alignCenter, .topbar, body, .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.topbar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#dateContainer {
+  font-size: 12px;
+  margin: 12px;
+}
+
+body {
+  background-color: #1c1d22;
+  color: white;
+  height: 100vh;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.appPlacement {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 25px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formContainer {
+  background-color: #2b2e3c;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.formContainer input {
+  padding: 10px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+
+.formContainer input:nth-child(2) {
+  background-color: #92fbaf;
+  color: #498e5c;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
+.formContainer input:nth-child(2):hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list input {
+  margin-right: 8px;
+}
+
+.list .item {
+  font-size: 14px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  background-color: #2b2e3c;
+  border-radius: 15px;
+  padding: 8px;
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .item button {
+  margin-left: auto;
+}
+
+.delete-button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.delete-button::before, .delete-button::after {
+  content: "";
+  background-color: #498e5c;
+  height: 10px;
+  width: 2px;
+  top: -5px;
+  left: -8px;
+}
+
+.delete-button:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+.delete-button:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=index.css.map */
